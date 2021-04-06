@@ -1,1 +1,1 @@
-import './styles.less'
+import './main.less'
