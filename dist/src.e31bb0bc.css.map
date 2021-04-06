@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.less"],"names":[],"mappings":"AAAA;EACE,UAAA;EACA,iBAAA","file":"src.e31bb0bc.css","sourceRoot":"..\\src","sourcesContent":["h1 {\n  color: red;\n  margin-left: 30px;\n}\n"]}
