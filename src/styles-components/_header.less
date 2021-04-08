@@ -1,0 +1,102 @@
+@import './utils/_utils';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 47px;
+}
+
+.header__nav--wrapper {
+  display: none;
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.is-visible {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  background-color: #2d2d35;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 98px 0px 65px;
+}
+
+.header__logo {
+  position: relative;
+  z-index: 1;
+
+  width: 77px;
+  height: 25px;
+
+  @media screen and(min-width: 768px) {
+    width: 120px;
+    height: 36px;
+  }
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and(min-width: 768px) {
+    display: block;
+    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.header__open-menu {
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
+}
+
+.header__close-menu {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  fill: #ffffff;
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
+}
+
+.header__btn {
+  .general-btn-styles();
+
+  font-family: Karla-Regular, sans-serif;
+  font-weight: 400;
+}
+
+.nav__item {
+  color: #ffffff;
+  font-family: Myriad Pro, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+
+  line-height: 30px;
+  text-align: center;
+
+  margin-bottom: 33px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:first-child {
+    margin-top: 62px;
+  }
+}

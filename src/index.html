@@ -4,11 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a test prodject">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital@0;1&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-
-    <h1>hello</h1>
-    <script src="./index.js" type="module"></script>
+    <div class="container">
+        <header class="header">
+            <img class="header__logo" src="./images/logo.png" alt="logo">
+            <div class="header__nav--wrapper">
+                <nav class="header__nav">
+                <a class="nav__item" href="#">Home</a>
+                <a class="nav__item" href="#">About Us</a>
+                <a class="nav__item" href="#">Blog</a>
+            </nav>
+            <button class="header__btn" type="button">Order Now</button>
+            <button class="header__close-menu" type="button">
+                <svg width="23" height="15">
+                    <use href="./images/sprite.svg#icon-cancel"></use>
+                </svg>
+                </use>
+            </button>
+        </div>
+            <button class="header__open-menu" type="button">
+            <svg  width="23" height="15">
+                <use href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+            </use>
+        </button>
+        </header>
+        
+        <main class="hero__main">
+            <h1 class="hero__header">Lorem ipsum dolor sit amet, consectetur</h1>
+            <p class="hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna
+                aliqua. Ut enim ad</p>
+            <img class="hero__form__arrow" src="./images/down.png" alt="arrow-rown">
+            <form class="hero__form">
+                <p class="hero__form__descr">Place your order</p>
+                <input class="hero__form__item" type="email" placeholder="Enter your email">
+                  <select class="hero__form__item">
+                    <option value="1">Essay</option>
+                    <option value="2">Essay</option>
+                    <option value="3">Essay</option>
+                </select>
+                <select class="hero__form__item">
+                    <option value="1">275</option>
+                    <option value="2">274</option>
+                    <option value="3">300</option>
+                </select>
+                <button class="hero__form__btn" type="submit">Order Now</button>
+            </form>
+        </main>
+        </div>
+        <article class="rewiew-article">
+            <h2 class="rewiev__heder">Testimonials</h2>
+            <ul class="rewiew__list">
+                <li class="rewiew__list__item">
+                    <p class="rewiew__list__item__text">
+                        I have tried a lot of online writing services and I stopped by this website, because the quality of the
+                        papers written
+                        here was above average. Moreover, they have affordable prices and good discounts for customers. I highly
+                        recommend you
+                        to try this service and you will not be disappointed.
+                    </p>
+                    <p class="rewiew__list__item__author">Andrey L.</p>
+                </li>
+                <li class="rewiew__list__item">
+                    <p class="rewiew__list__item__text">
+                        When I was stuck with my essay writing and thought that there is no way out, you guys appeared out of
+                        the blue! Your
+                        writing team deserves appreciation. I cannot imagine my student life without your competent assistance.
+                        Thank you!
+                    </p>
+                    <p class="rewiew__list__item__author">Andrey L.</p>
+                </li>
+                <li class="rewiew__list__item">
+                    <p class="rewiew__list__item__text">
+                        I am a returning customer of this online writing service. I have been using this site from High school
+                        and I must admit
+                        that my writer has never let me down. Moreover, I have always received a good grade on all papers
+                        ordered hereou!
+                    </p>
+                    <p class="rewiew__list__item__author">Kristy T.</p>
+                </li>
+            </ul>
+            <div class="wrapper">
+                <span class="rewiew__ilst__counter">3/10</span>
+                <button class="rewiew__add-rewiew-btn" type="button">Add Testimonial</button>
+            </div>
+        </article>
+    
+    <script src="./index.js"></script>
 </body>
 </html>

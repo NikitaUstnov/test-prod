@@ -1,0 +1,90 @@
+.rewiew-article {
+  padding-top: 37px;
+  padding-bottom: 50px;
+
+  text-align: center;
+}
+
+.rewiev__heder {
+  color: #2d2d35;
+  font-family: 'Playfair Display';
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.rewiew__list {
+  display: flex;
+  overflow: hidden;
+}
+
+.rewiew__list__item {
+  margin: 20px 16px;
+  padding: 30px 20px 50px;
+
+  -webkit-box-shadow: 0px 0px 75px -4px rgba(91, 94, 107, 0.1);
+  -moz-box-shadow: 0px 0px 75px -4px rgba(91, 94, 107, 0.1);
+  box-shadow: 0px 0px 75px -4px rgba(91, 94, 107, 0.1);
+
+  &:first-child,
+  &:last-child {
+    display: none;
+  }
+}
+.rewiew__list__item__text {
+  display: inline-flex;
+  flex-direction: column;
+
+  color: #5b5e6b;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.5;
+
+  &::after {
+    content: '';
+
+    height: 2px;
+    width: 100%;
+
+    background-color: #f1f5f7;
+
+    margin-top: 9px;
+    margin-bottom: 13px;
+  }
+}
+
+.rewiew__list__item__author {
+  color: #2d2d35;
+  font-family: Ovo;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.wrapper {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.rewiew__ilst__counter {
+  margin-bottom: 25px;
+
+  color: #2d2d35;
+  font-family: Ovo, serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.rewiew__add-rewiew-btn {
+  padding: 15px 60px;
+
+  border-radius: 3px;
+  border: 1px solid #da6f5b;
+
+  /* Style for "Add Testim" */
+
+  color: #da6f5b;
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
