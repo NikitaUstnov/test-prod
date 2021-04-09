@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"C:\\Users\\Nikita\\Documents\\GitHub\\test-prod\\src\\images\\bacground-mobile.png":[["bacground-mobile.6462f8ba.png","FJ90"],"FJ90"],"C:\\Users\\Nikita\\Documents\\GitHub\\test-prod\\src\\images\\bacground-desctop.png":[["bacground-desctop.a7d052f1.png","ggAe"],"ggAe"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./main.less");var e=document.querySelector(".header__nav--wrapper"),r=document.querySelector(".header__open-menu"),i=document.querySelector(".header__close-menu");function s(){e.classList.add("is-visible")}function c(){e.classList.remove("is-visible")}r.addEventListener("click",s),i.addEventListener("click",c);
 },{"./main.less":"c0Ei"}]},{},["Focm"], null)
-//# sourceMappingURL=/src.023af27f.js.map
+//# sourceMappingURL=/test-prod/src.bdd25813.js.map
