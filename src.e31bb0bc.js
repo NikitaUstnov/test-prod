@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\Nikita\\Documents\\GitHub\\test-prod\\src\\images\\bacground-mobile.png":[["bacground-mobile.3892353c.png","images/bacground-mobile.png"],"images/bacground-mobile.png"],"C:\\Users\\Nikita\\Documents\\GitHub\\test-prod\\src\\images\\bacground-desctop.jpg":[["bacground-desctop.15fa34be.jpg","images/bacground-desctop.jpg"],"images/bacground-desctop.jpg"],"_css_loader":"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"C:\\Users\\Nikita\\Documents\\GitHub\\test-prod\\src\\images\\bacground-mobile.png":[["bacground-mobile.3892353c.png","images/bacground-mobile.png"],"images/bacground-mobile.png"],"C:\\Users\\Nikita\\Documents\\GitHub\\test-prod\\src\\images\\bacground-desctop.png":[["bacground-desctop.88ff8700.png","images/bacground-desctop.png"],"images/bacground-desctop.png"],"_css_loader":"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./main.less");
@@ -236,7 +236,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62623" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57194" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
