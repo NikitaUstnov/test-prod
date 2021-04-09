@@ -4,6 +4,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and(min-width: 768px) {
+    width: 100%;
+    max-width: 1130px;
+  }
 }
 
 .hero__form__arrow {
@@ -12,11 +17,16 @@
 
 .hero__header {
   color: #ffffff;
-  font-family: 'Playfair Display';
   font-size: 36px;
   font-weight: 700;
+  font-family: Playfair Display;
 
   text-align: center;
+
+  @media screen and(min-width: 768px) {
+    font-size: 72px;
+    font-weight: 700;
+  }
 }
 
 .hero__description {
@@ -24,11 +34,16 @@
   font-family: Karla;
   font-size: 16px;
   font-weight: 400;
-
-  line-height: 24px;
+  line-height: 1.5;
   text-align: center;
 
   margin-top: 24px;
+
+  @media screen and(min-width: 768px) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
 }
 
 .hero__form {
@@ -36,17 +51,41 @@
   background-color: #000;
 
   padding: 28px 13px 30px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 35px 43px 40px;
+
+    width: 100%;
+
+    background-color: RGBA(0, 0, 0, 0.7);
+  }
+}
+
+.hero__form-wrappr {
+  margin-bottom: 17px;
+  @media screen and(min-width: 768px) {
+    margin-bottom: 25px;
+    display: flex;
+  }
 }
 
 .hero__form__descr {
   color: #ffffff;
-  font-family: 'Playfair Display', sans-serif;
   font-size: 16px;
   font-weight: 400;
-
   text-align: center;
 
   margin-bottom: 14px;
+
+  @media screen and(min-width: 768px) {
+    font-size: 24px;
+
+    margin-bottom: 18px;
+  }
 }
 
 .hero__form__item {
@@ -58,10 +97,10 @@
 
   background-color: #444444;
 
-  margin-bottom: 17px;
-
   padding-left: 21px;
   padding-right: 13px;
+
+  margin-bottom: 17px;
 
   color: #ffffff;
   font-family: Karla;
@@ -70,12 +109,33 @@
 
   line-height: 24px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &::placeholder {
     color: #ffffff;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 34px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .hero__form__btn {
   .general-btn-styles();
   width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: unset;
+    padding: 15px 70px;
+
+    font-family: Karla;
+    font-size: 18px;
+    font-weight: 400;
+  }
 }

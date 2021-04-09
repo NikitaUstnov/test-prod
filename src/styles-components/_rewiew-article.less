@@ -5,18 +5,38 @@
   padding-bottom: 50px;
 
   text-align: center;
+
+  @media screen and(min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .rewiev__heder {
   color: #2d2d35;
-  font-family: 'Playfair Display';
   font-size: 36px;
   font-weight: 400;
-}
 
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+}
+.rewiew__list__container {
+  @media screen and(min-width: 768px) {
+    overflow: hidden;
+    width: 100%;
+  }
+}
 .rewiew__list {
-  display: flex;
-  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    width: 200%;
+    display: flex;
+    transform: translateX(-5%);
+  }
 }
 
 .rewiew__list__item {
@@ -30,6 +50,21 @@
   &:first-child,
   &:last-child {
     display: none;
+  }
+
+  @media screen and(min-width: 768px) {
+    padding: 40px 72px 35px;
+
+    margin: 17px 25px 40px;
+
+    width: 100%;
+    max-width: 730px;
+    text-align: left;
+
+    &:first-child,
+    &:last-child {
+      display: block;
+    }
   }
 }
 .rewiew__list__item__text {
@@ -76,6 +111,10 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 1.25;
+
+  @media screen and(min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 .rewiew__add-rewiew-btn {
   padding: 15px 60px;
@@ -83,22 +122,43 @@
   border-radius: 3px;
   border: 1px solid #da6f5b;
 
-  /* Style for "Add Testim" */
-
   color: #da6f5b;
-  font-family: 'Myriad Pro', sans-serif;
+  font-family: Myriad Pro, sans-serif;
   font-size: 16px;
   font-weight: 400;
+
+  @media screen and(min-width: 768px) {
+    padding: 15px 52px;
+    font-size: 18px;
+  }
 }
 
 .rewiew__swipe-right-btn {
   position: absolute;
   right: 0;
   bottom: 55%;
+  @media screen and(min-width: 768px) {
+    right: 30%;
+    bottom: 55%;
+  }
 }
 
 .rewiew__swipe-left-btn {
   position: absolute;
   left: 0;
   bottom: 55%;
+
+  @media screen and(min-width: 768px) {
+    left: 30%;
+    bottom: 55%;
+  }
+}
+
+.rewiew__utils__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: 730px;
 }
