@@ -156,9 +156,14 @@
 
 .rewiew__utils__wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 
-  width: 100%;
-  max-width: 730px;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 730px;
+  }
 }

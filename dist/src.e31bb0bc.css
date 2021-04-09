@@ -471,10 +471,16 @@ button {
 }
 .rewiew__utils__wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  width: 100%;
-  max-width: 730px;
+}
+@media screen and (min-width: 768px) {
+  .rewiew__utils__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 730px;
+  }
 }
 
 
